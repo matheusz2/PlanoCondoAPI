@@ -47,7 +47,7 @@ Para obter uma cópia local do código fonte, siga estes passos:
 
 2. **Execute o Comando de Clonagem**:
    ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
+   git clone https://github.com/matheusz2/PlanoCondoAPI.git
 
 ## Instalação
 
