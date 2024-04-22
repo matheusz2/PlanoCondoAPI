@@ -50,9 +50,9 @@ namespace PlanoCondoAPI._2___Services
             return true;
         }
 
-        public PlansDTO Get(int id)
+        public PlansDTO Get(string planId)
         {
-            Plans? entity = _dbContext.Plans.Find(id);
+            Plans? entity = _dbContext.Plans.FirstOrDefault(x => x.PlanId == planId);
             if (entity == null) { return new PlansDTO(); }
             return entity.ToDto();
         }
@@ -61,6 +61,19 @@ namespace PlanoCondoAPI._2___Services
         {
             var listPlans = new List<PlansDTO>();
             List<Plans> plans = _dbContext.Plans.ToList();
+
+            foreach (Plans x in plans)
+                listPlans.Add(x.ToDto());
+
+            return listPlans;
+        }
+
+        public List<PlansDTO> GetPrimaryPlans()
+        {
+            var listPlans = new List<PlansDTO>();
+            List<Plans> plans = _dbContext.Plans
+                                .Where(x => !x.AllowRelease)
+                                .ToList();
 
             foreach (Plans x in plans)
                 listPlans.Add(x.ToDto());
@@ -135,7 +148,7 @@ namespace PlanoCondoAPI._2___Services
             {
                 int lastNumber = int.Parse(parentPlanId.Substring(parentPlanId.LastIndexOf('.') + 1)) + 1;
 
-                if(lastNumber > 999)
+                if (lastNumber > 999)
                 {
                     var upOneLevel = parentPlanId.Contains('.') ? parentPlanId.Substring(0, parentPlanId.LastIndexOf('.')) : null;
                     if (upOneLevel == null)
@@ -214,6 +227,6 @@ namespace PlanoCondoAPI._2___Services
 
             return listErrors;
         }
-
+     
     }
 }

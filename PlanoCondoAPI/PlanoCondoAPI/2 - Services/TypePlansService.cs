@@ -41,25 +41,13 @@ namespace PlanoCondoAPI._2___Services
             return true;
         }
 
-        public TypePlansDTO Get(int id)
-        {
-            TypePlans? entity = _dbContext.TypePlans.Find(id);
-            if(entity == null) { return new TypePlansDTO(); }
-            return entity.ToDto();
-        }
-
         public List<TypePlansDTO> GetAll()
         {
             var listTypePlan = new List<TypePlansDTO>();
             List<TypePlans> plans = _dbContext.TypePlans.ToList();
 
             foreach (var x in plans)
-            {
-                var typePlan = new TypePlansDTO();
-                typePlan.TypePlanId = x.TypePlanId;
-                typePlan.TypePlanName = x.TypePlanName;
-                listTypePlan.Add(typePlan);
-            }
+                listTypePlan.Add(x.ToDto());
 
             return listTypePlan;
         }

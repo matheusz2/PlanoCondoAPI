@@ -7,9 +7,6 @@ namespace PlanoCondoAPI._1___Interface
         // Método para criar um novo objeto
         List<string> Create(T entity);
 
-        // Método para obter um objeto por ID
-        T Get(int id);
-
         // Método para obter uma lista de objeto
         List<T> GetAll();
 

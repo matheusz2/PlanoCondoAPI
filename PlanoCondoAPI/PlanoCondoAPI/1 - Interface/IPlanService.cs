@@ -6,6 +6,8 @@ namespace PlanoCondoAPI._2___Interface
 {
     public interface IPlanService : ICrud<PlansDTO>
     {
+        PlansDTO Get(string PlanId);
+        List<PlansDTO> GetPrimaryPlans();
         string SuggestNextPlanCode(string parentPlanId);
     }
 }

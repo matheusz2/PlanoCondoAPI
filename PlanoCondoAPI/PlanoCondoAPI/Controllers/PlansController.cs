@@ -19,11 +19,25 @@ namespace PlanoCondoAPI.Controllers
             _planService = plansService;
         }
 
+        [Route("Get")]
+        [HttpGet]
+        public PlansDTO Get(string planId)
+        {
+            return _planService.Get(planId);
+        }
+
         [Route("GetAll")]
         [HttpGet]
         public List<PlansDTO> GetAll()
         {
             return _planService.GetAll();
+        }
+
+        [Route("GetPrimaryPlans")]
+        [HttpGet]
+        public List<PlansDTO> GetPrimaryPlans()
+        {
+            return _planService.GetPrimaryPlans();
         }
 
         [Route("Create")]
