@@ -212,8 +212,6 @@ namespace PlanoCondoAPI._2___Services
             if (parentPlan.AllowRelease)
                 listErrors.Add("O plano de conta PAI aceita lançamentos, não é possível criar o registro FILHO.");
 
-            //&& !_dbContext.Plans.Any(p => p.PlanId.StartsWith(plans.ParentPlanId + "."))
-
             return listErrors;
         }
 
