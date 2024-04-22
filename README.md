@@ -1,7 +1,5 @@
 # PlanoCondoAPI
 
-## Visão Geral
-Breve introdução ao projeto, explicando o problema que ele resolve, quem deve usá-lo e por que. Especifique as principais funcionalidades e pontos fortes do projeto.
 
 ## Índice
 - [Pré-requisitos](#pré-requisitos)
@@ -17,9 +15,9 @@ Breve introdução ao projeto, explicando o problema que ele resolve, quem deve 
 ## Pré-requisitos
 Liste todos os pré-requisitos necessários para executar este projeto, incluindo software, bibliotecas e ferramentas externas. Forneça links para instalação quando aplicável.
 
-Git
-.NET 8
-SQL Server
+- Git
+- .NET 8
+- SQL Server
 
 
 ## Configuração do Ambiente
@@ -49,7 +47,7 @@ Para obter uma cópia local do código fonte, siga estes passos:
 
 2. **Execute o Comando de Clonagem**:
    ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
+   git clone https://github.com/matheusz2/PlanoCondoAPI.git
 
 ## Instalação
 
