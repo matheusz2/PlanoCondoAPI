@@ -1,7 +1,11 @@
 # PlanoCondoAPI
 
 ## Visão Geral
-Breve introdução ao projeto, explicando o problema que ele resolve, quem deve usá-lo e por que. Especifique as principais funcionalidades e pontos fortes do projeto.
+
+Este é um projeto realizado para uma entrevista técnica para a uCondô.
+
+Serviço: Plano de Contas
+
 
 ## Índice
 - [Pré-requisitos](#pré-requisitos)
@@ -17,9 +21,9 @@ Breve introdução ao projeto, explicando o problema que ele resolve, quem deve 
 ## Pré-requisitos
 Liste todos os pré-requisitos necessários para executar este projeto, incluindo software, bibliotecas e ferramentas externas. Forneça links para instalação quando aplicável.
 
-Git
-.NET 8
-SQL Server
+- Git
+- .NET 8
+- SQL Server
 
 
 ## Configuração do Ambiente
