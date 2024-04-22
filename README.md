@@ -1,11 +1,5 @@
 # PlanoCondoAPI
 
-## Visão Geral
-
-Este é um projeto realizado para uma entrevista técnica para a uCondô.
-
-Serviço: Plano de Contas
-
 
 ## Índice
 - [Pré-requisitos](#pré-requisitos)
