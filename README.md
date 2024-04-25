@@ -13,7 +13,6 @@
 - [Licença](#licença)
 
 ## Pré-requisitos
-Liste todos os pré-requisitos necessários para executar este projeto, incluindo software, bibliotecas e ferramentas externas. Forneça links para instalação quando aplicável.
 
 - Git
 - .NET 8
